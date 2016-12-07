@@ -26,7 +26,7 @@ public class CannonBarrel extends StationParts{
     public void draw(Graphics g){
         Graphics2D g2 = (Graphics2D) g;
         g2.setColor(getShade());
-        Rectangle barrel = new Rectangle(getxCoord(),getyCoord(), width, length);
+        Rectangle2D  barrel = new Rectangle2D.Double(getxCoord(),getyCoord(), width, length);
         g2.draw(barrel);
         g2.fill(barrel);
     }
