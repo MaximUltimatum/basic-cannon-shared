@@ -25,7 +25,7 @@ public class WarPainter extends Canvas{
         rightMount.draw(WarG2D);
         obstacle = new RandomWall(380,200, Color.GRAY, 10, 60);
         obstacle.draw(WarG2D);
-        blueCannon = new CannonBarrel(45, 330, Color.RED, 45);
+        blueCannon = new CannonBarrel(45, 330, Color.RED, 45);//test change
         blueCannon.draw(WarG2D);
 
         //pass paitnProjectile a shot TODO need direction code
