@@ -18,6 +18,7 @@ public class ProjectileMedium extends StationParts{
         ballSize = size;
     }
 
+
     public void setBallSize(int ballSize) {
         this.ballSize = ballSize;
     }
@@ -34,7 +35,10 @@ public class ProjectileMedium extends StationParts{
     public int getyCoord(){
         return medPosition.getPixelY();
     }
-
+    public double getAngle(){return medPosition.getAngle();}
+    public void setAngle(double theAngle){medPosition.setAngle(theAngle);}
+    public int getVelocity(){return medPosition.getStartVelocity();}
+    public void setVelocity(int velocity){medPosition.setStartVelocity(velocity);}
 
     public void setBallColor(Color aColor){
          setShade(aColor);

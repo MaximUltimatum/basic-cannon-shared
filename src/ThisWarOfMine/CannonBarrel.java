@@ -7,7 +7,7 @@ import java.awt.geom.Rectangle2D;
  * Created by Student on 12/6/2016.
  */
 public class CannonBarrel extends StationParts{
-    private int rotAngle;
+    private int rotAngle = 45;
     private int length = 30;
     private int width = 14;
     public CannonBarrel(int x, int y, Color theColor, int angle){

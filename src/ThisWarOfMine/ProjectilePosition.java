@@ -15,6 +15,22 @@ public class ProjectilePosition {
     private int timeCount = 0;//in milliseconds
     private int damage = 5;//light 3, heavy 10
 
+    public int getStartVelocity() {
+        return startVelocity;
+    }
+
+    public double getAngle() {
+        return angle;
+    }
+
+    public void setAngle(double angle) {
+        this.angle = angle;
+    }
+
+    public void setStartVelocity(int startVelocity) {
+        this.startVelocity = startVelocity;
+    }
+
     public ProjectilePosition(int x, int y, double cannonAngle, int velocity){
         pixelX = x;
         pixelY = 400 - y;
@@ -26,7 +42,7 @@ public class ProjectilePosition {
     public int getTimeCount(){return timeCount;}
     public void setTimeCount(int time){timeCount = time;}
     //pixelX at time t
-    public int getPixelX(){//TODO fix possible rounding error (rounds down too much)
+    public int getPixelX(){
         pixelX = (int)Math.round(startVelocity*(timeCount/1000.0)*Math.cos(angle));
         return pixelX;
     }
