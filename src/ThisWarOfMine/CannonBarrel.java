@@ -8,8 +8,8 @@ import java.awt.geom.Rectangle2D;
  */
 public class CannonBarrel extends StationParts{
     private int rotAngle = 45;
-    private int length = 30;
-    private int width = 14;
+    private int length = 12;
+    private int width = 40;
     public CannonBarrel(int x, int y, Color theColor, int angle){
         super(x,y,theColor);
         rotAngle = angle;
