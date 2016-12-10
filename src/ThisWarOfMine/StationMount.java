@@ -17,7 +17,6 @@ public class StationMount extends StationParts {
         height = h;
     }
 
-
     public void draw(Graphics g){
         Graphics2D g2 = (Graphics2D) g;
         g2.setColor(getShade());

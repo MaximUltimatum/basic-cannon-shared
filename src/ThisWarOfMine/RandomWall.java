@@ -15,6 +15,14 @@ public class RandomWall extends StationParts {
         height = h;
     }
 
+    public int getHeight() {
+        return height;
+    }
+
+    public int getWidth() {
+        return width;
+    }
+
     public void draw(Graphics g){
         Graphics2D g2 = (Graphics2D) g;
         g2.setColor(getShade());
